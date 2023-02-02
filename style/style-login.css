@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-image: url(back2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.login{
+    position: relative;
+    background-color: #060c21;
+    border: 1px solid #000;
+    width: 280px;
+    height: 350px;
+    padding: 10px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+.login::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg, #e91363, #5d02ff);
+    z-index: -1;
+    transform: skew(2deg, 1deg);
+    border-radius: 10px;
+}
+.login div h2{
+    color: #fff;
+    font-weight: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.login .input{
+    margin-top: 40px;
+    text-align: left;
+}
+.login .input .inputBox{
+    margin-top: 5px;
+    width: 150px;
+}
+.login .input .inputBox label{
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.login .input .inputBox input{
+    position: relative;
+    width: 130%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.botao {
+    position: relative;
+    width: 130%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.botao{
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.botao:hover{
+    background: linear-gradient(315deg, #5d02ff, #e91e63);
+}
+.botao:active{
+    color: rgba(255, 255, 255, 0.521);
+    background: linear-gradient(315deg, #5d02ff, #e91e63);
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
